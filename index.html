@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulir Pendaftaran Siswa</title>
+
+<link rel="stylesheet" href="SERSMTF.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Formulir Pendaftaran Siswa</h2>
+
+    <form id="form">
+
+        
+        <label>Nama Lengkap *</label>
+        <input type="text" id="nama" placeholder="Contoh: Muhammad Raihan">
+        <div class="error" id="errorNama"></div>
+
+       
+        <label>Kelas *</label>
+        <input type="text" id="kelas" placeholder="Contoh: XII IPA 2 / 11A / 7B">
+        <div class="error" id="errorKelas"></div>
+
+       
+        <label>Pilih Ekstrakurikuler (Pilihan 3)</label>
+        <div class="option">
+            <input type="checkbox" name="ekskul" value="Basket"> Basket
+        </div>
+        <div class="option">
+            <input type="checkbox" name="ekskul" value="Futsal"> Futsal
+        </div>
+        <div class="option">
+            <input type="checkbox" name="ekskul" value="Paduan Suara"> Paduan Suara
+        </div>
+
+        
+        <label>Pilih Jadwal Belajar (Wajib Pilih Salah Satu)</label>
+        <div class="option">
+            <input type="radio" name="jadwal" value="Pagi"> Pagi (07.00 - 12.00)
+        </div>
+        <div class="option">
+            <input type="radio" name="jadwal" value="Siang"> Siang (12.30 - 17.00)
+        </div>
+        <div class="option">
+            <input type="radio" name="jadwal" value="Sore"> Sore (17.30 - 20.30)
+        </div>
+        <div class="option">
+            <input type="radio" name="jadwal" value="Campuran"> Campuran (fleksibel)
+        </div>
+        <div class="error" id="errorJadwal"></div>
+
+        
+        <div class="button-group">
+            <button type="button" class="submit" onclick="kirim()">Daftar Sekarang</button>
+            <button type="reset" class="reset">Reset Form</button>
+        </div>
+
+    </form>
+</div>
+
+
+<script src="SERSMTF.js"></script>
+
+</body>
+</html>
